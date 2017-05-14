@@ -5,7 +5,7 @@ header.masthead {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/sky-night-africa.jpg');
+    background-image: url('../img/sky-night-africa-sm.jpg');
     background-attachment: fixed;
     text-align: center;
     color: white;
@@ -27,7 +27,7 @@ header.masthead {
             }
             p {
                 font-weight: 300;
-                color: fade-out(white, 0.3);
+                color: white;
                 font-size: 16px;
                 margin-bottom: 50px;
             }
@@ -36,6 +36,7 @@ header.masthead {
     @media (min-width: 768px) {
         height: 100%;
         min-height: 600px;
+        background-image: url('../img/sky-night-africa.jpg');
         .header-content {
             position: absolute;
             top: 50%;
