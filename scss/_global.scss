@@ -45,6 +45,13 @@ p {
 
 .bg-primary {
     background-color: $theme-primary !important;
+    a {
+        color: $gray-base;
+        &:hover,
+        &:focus {
+            color: lighten($gray-dark, 0.1);
+        }
+    }
 }
 
 .bg-dark {
@@ -55,6 +62,8 @@ p {
 .bg-cosmos {
     background-image: url('../img/milky-way-nebula.jpg');
 }
+
+
 
 
 .text-faded {

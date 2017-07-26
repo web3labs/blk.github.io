@@ -42,6 +42,10 @@ p {
 
 .bg-primary {
   background-color: #92a0c3 !important; }
+  .bg-primary a {
+    color: #000; }
+    .bg-primary a:hover, .bg-primary a:focus {
+      color: #333333; }
 
 .bg-dark {
   background-color: #222222 !important;
