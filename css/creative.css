@@ -41,11 +41,12 @@ p {
   margin-bottom: 20px; }
 
 .bg-primary {
-  background-color: #92a0c3 !important; }
+  background-color: #92a0c3 !important;
+  color: white; }
   .bg-primary a {
-    color: #000; }
+    color: white; }
     .bg-primary a:hover, .bg-primary a:focus {
-      color: #333333; }
+      color: #eeeeee; }
 
 .bg-dark {
   background-color: #222222 !important;
@@ -53,6 +54,9 @@ p {
 
 .bg-cosmos {
   background-image: url("../img/milky-way-nebula.jpg"); }
+
+.text-black {
+  color: black; }
 
 .text-faded {
   color: rgba(255, 255, 255, 0.7); }
