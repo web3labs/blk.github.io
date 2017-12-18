@@ -155,6 +155,13 @@ body {
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
             color: #92a0c3; } }
 
+.alert-info {
+  background-color: #92a0c3;
+  border-color: #92a0c3;
+  color: white; }
+  .alert-info a {
+    color: white; }
+
 header.masthead {
   position: relative;
   width: 100%;
@@ -198,7 +205,7 @@ header.masthead {
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-        padding: 0 50px; }
+        padding: 0 0; }
         header.masthead .header-content .header-content-inner {
           max-width: 1000px;
           margin-left: auto;

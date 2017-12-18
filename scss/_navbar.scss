@@ -79,3 +79,22 @@
         }
     }
 }
+
+.alert-info {
+    background-color: $theme-primary;
+    border-color: $theme-primary;
+    color: white;
+    a {
+        color: white;
+    }
+    a.active {
+
+    }
+}
+
+.navbar-container {
+    // Unfortunately, with this enabled, there is still whitespace on the far right side of the
+    // banner. TODO: Fix this.
+    //margin-left: 0;
+    //margin-right: 0;
+}
