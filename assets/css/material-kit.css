@@ -8971,8 +8971,7 @@ label {
   display: none; }
 
 .navbar:not(.navbar-transparent) .logo-small {
-  width: 46px;
-  height: 46px;
+  width: 69px;
   overflow: hidden;
   margin-top: -6px;
   display: block; }
