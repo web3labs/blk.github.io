@@ -280,6 +280,14 @@
       }
     }
   }
+
+  // We don't want logos in footer to be too large on smaller devices
+  .footer {
+    .img-fluid {
+      max-width: 25%;
+      height: auto;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -337,6 +345,14 @@
 @media screen and (max-width: 400px){
   .cd-vertical-nav{
     display: none !important;
+  }
+
+  // Reduce font on smaller devices
+  h1 {
+    font-size: $font-size-h2;
+  }
+  h4 {
+    font-size: $font-size-h5;
   }
 }
 

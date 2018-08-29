@@ -2263,7 +2263,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   display: inline-block;
   font-weight: 400;
   text-align: center;
-  white-space: nowrap;
+  white-space: normal;
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -16752,7 +16752,10 @@ select.selectpicker {
     -webkit-animation: bottombar-x 500ms linear 0s;
     animation: bottombar-x 500ms 0s;
     -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards; } }
+    animation-fill-mode: forwards; }
+  .footer .img-fluid {
+    max-width: 25%;
+    height: auto; } }
 
 @media screen and (max-width: 767px) {
   .presentation-page .section-components .components-macbook {
@@ -16783,7 +16786,11 @@ select.selectpicker {
 
 @media screen and (max-width: 400px) {
   .cd-vertical-nav {
-    display: none !important; } }
+    display: none !important; }
+  h1 {
+    font-size: 2.25rem; }
+  h4 {
+    font-size: 1.0625rem; } }
 
 @media screen and (min-width: 767px) {
   .bd-docs .bd-example .card.card-profile .card-header-image {

@@ -8,7 +8,7 @@
   display: inline-block;
   font-weight: $btn-font-weight;
   text-align: center;
-  white-space: nowrap;
+  white-space: normal;  // wrap text to avoid it going outside of bounds of button
   vertical-align: middle;
   user-select: none;
   border: $btn-border-width solid transparent;
