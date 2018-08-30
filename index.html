@@ -2,320 +2,924 @@
 <html lang="en">
 
 <head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    blk.io Enterprise Ethereum Blockchain Platform
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="./assets/css/material-kit.css?v=2.1.0" rel="stylesheet" />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Enterprise blockchain built using Ethereum technology">
-    <meta name="author" content="blk.io">
+  <script>
+      var ga;
+      if (document.location.hostname.indexOf("blk.io") > -1) {
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      } else {
+          ga = function() {
+              console.log("ga:", arguments)
+          }
+      }
 
-    <title>blk.io Enterprise Blockchain</title>
+      ga('create', 'UA-99114923-1', 'auto');
+      ga('send', 'pageview');
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/creative.min.css" rel="stylesheet">
-
-    <!-- Temporary navbar container fix -->
-    <style>
-    .navbar-toggler {
-        z-index: 1;
-    }
-    
-    @media (max-width: 576px) {
-        nav > .container {
-            width: 100%;
-        }
-    }
-    </style>
-
-    <script>
-        var ga;
-        if (document.location.hostname.indexOf("blk.io") > -1) {
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        } else {
-            ga = function() {
-                console.log("ga:", arguments)
-            }
-        }
-
-        ga('create', 'UA-99114923-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-
+  </script>
 </head>
 
-<body id="page-top">
+<body class="index-page sidebar-collapse">
+  <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand">
+          <div class="logo-big">
+            <img src="assets/img/blk-io-white-nobackground.png" class="img-fluid">
+          </div>
+          <div class="logo-small">
+            <img src="assets/img/blk-io-black-nobackground.png" class="img-fluid">
+          </div>
+        </a>
 
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="container navbar-container">
-            <a class="navbar-brand" href="#page-top">blk.io</a>
-            <div class="collapse navbar-collapse" id="navbarExample">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#technology">Technology</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#partners">Partners</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://angel.co/blk-io/jobs" target="_blank">Careers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+              <i class="material-icons">layers</i> Epirus Platform
+            </a>
+            <div class="dropdown-menu dropdown-with-icons">
+              <a href="#features" class="dropdown-item">
+                <i class="material-icons">view_quilt</i> About
+              </a>
+              <a href="#pricing-3" class="dropdown-item">
+                <i class="material-icons">attach_money</i> Pricing
+              </a>
             </div>
+          </li>
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+              <i class="material-icons">bar_chart</i> Blockchain Explorer
+            </a>
+            <div class="dropdown-menu dropdown-with-icons">
+              <a href="#blockchain-explorer" class="dropdown-item">
+                <i class="material-icons">show_chart</i> About
+              </a>
+              <a href="#pricing-4" class="dropdown-item">
+                <i class="material-icons">attach_money</i> Pricing
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#team-1" class="nav-link">
+              Team
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contactus" class="nav-link">
+              Contact
+            </a>
+          </li>
+          <li class="button-container nav-item iframe-extern">
+            <a href="#pricing-3" class="btn btn-danger btn-round btn-block">
+              Get Started
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-header header-filter" style="background-image: url('assets/img/blockchain-blue.jpg')">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>
+            <br>
+          </h1>
+          <h1 class="title">Epirus, the enterprise Ethereum platform.</h1>
+          <h4>Our platform provides everything you need to deploy, run and integrate with a blockchain in production.</h4>
+          <br>
+          <a href="#features" class="btn btn-primary btn-raised">
+            Learn more
+          </a>
         </div>
-    </nav>
+      </div>
 
-    <header class="masthead">
-        <div id="particles-js"></div>
-        <div class="header-content">
-            <div class="text-center alert alert-info alert-dismissible fade show" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <strong>We're growing our engineering team!</strong>
-                Read more
-                <strong>
-                    <a href="https://angel.co/blk-io/jobs" target="_blank">here</a>.
-                </strong>
+      <div class="col-md-4 ml-auto mr-auto offset-md-4">
+        <div class="card card-raised card-form-horizontal">
+          <div class="card-body ">
+            <a href="http://eepurl.com/dFjp-f" target="_blank">
+              <button type="button" class="btn btn-danger btn-block">Sign up to our newsletter</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cd-section bg-light" id="customers">
+    <div class="testimonials-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 ml-auto mr-auto text-center">
+            <h2 class="title">We're working with</h2>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-2 offset-md-3">
+            <div class="card mb-3 card-plain">
+              <img class="card-img-top" src="./assets/img/customers/microsoft-logo.png" alt="Microsoft">
             </div>
-            &nbsp;
+          </div>
+          <div class="col-md-2">
+            <div class="card mb-3 card-plain">
+              <img class="card-img-top" src="./assets/img/customers/jpmorgan.png" alt="J.P. Morgan">
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card mb-3 card-plain">
+              <img class="card-img-top" src="./assets/img/customers/alastria-logo.png" alt="Alastria Network">
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-2 offset-md-3">
+            <div class="card mb-3 card-plain">
+              <img class="card-img-top" src="./assets/img/partners/ecf.png" alt="Ethereum Community Fund">
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card mb-3 card-plain">
+              <img class="card-img-top" src="./assets/img/partners/eea.png" alt="Enterprise Ethereum Alliance">
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card mb-3 card-plain">
+              <img class="card-img-top" src="./assets/img/partners/innovate-uk-logo.png" alt="Innovate UK">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-            <div class="header-content-inner">
-                <img src="img/light-logo.png" class="img-responsive center-block" alt="blk.io logo">
-                <p></p>
-                <h1 id="homeHeading">Enterprise Blockchain Technology</h1>
-                <hr>
-                <h3><strong>Integrate your enterprise with the blockchain</strong></h3>
+  <div class="cd-section" id="features">
+    <div class="container">
+
+      <div class="features-3">
+
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto text-center">
+            <h2 class="title">An Integrated Blockchain Platform</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5 ml-auto">
+            <div class="card card-plain">
+              <a href="#pablo">
+                <div class="card-header card-header-image">
+                  <img src="assets/img/epirus-platform.png">
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <div class="info info-horizontal">
+              <div class="icon icon-primary">
+                <i class="material-icons">extension</i>
+              </div>
+              <div class="description">
+                <h4 class="info-title">Modular Components</h4>
+                <p>The building blocks you need to run an enterprise blockchain deployment</p>
+              </div>
+            </div>
+            <div class="info info-horizontal">
+              <div class="icon icon-primary">
+                <i class="material-icons">business</i>
+              </div>
+              <div class="description">
+                <h4 class="info-title">Enterprise-friendly</h4>
+                <p>In any blockchain application, utilising the technology correctly is just part of the solution. That why we provide authentication and access control components, developer integration libraries and monitoring tools amongst other things to slot neatly into your existing infrastructure.</p>
+              </div>
+            </div>
+            <div class="info info-horizontal">
+              <div class="icon icon-primary">
+                <i class="material-icons">more_vert</i>
+              </div>
+              <div class="description">
+                <h4 class="info-title">Easy to Use</h4>
+                <p>Multiple integration layers for your existing enterprise applications</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="features-5" style="background-image: url('./assets/img/global-blockchain-network.jpg')">
+    <div class="col-md-8 ml-auto mr-auto text-center">
+      <h2 class="title">Features</h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="info">
+            <div class="icon">
+              <i class="material-icons">link</i>
+            </div>
+            <h4 class="info-title">Built using Ethereum Technology</h4>
+            <p>Enterprise-grade platform using Quorum™, an enterprise version of Ethereum developed by JP Morgan</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="info">
+            <div class="icon">
+              <i class="material-icons">account_balance</i>
+            </div>
+            <h4 class="info-title">Private Transaction Enclave</h4>
+            <p>Keep sensitive private transaction data off the blockchain in our Crux transaction enclave</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="info">
+            <div class="icon">
+              <i class="material-icons">cloud</i>
+            </div>
+            <h4 class="info-title">Flexible Deployment</h4>
+            <p>SaSS, cloud or on-premise hosting options</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="info">
+            <div class="icon">
+              <i class="material-icons">lock</i>
+            </div>
+            <h4 class="info-title">Enterprise Authentication</h4>
+            <p>Seamless integration with enterprise directory services (LDAP, OAUTH, Kerberos, ...) for access control</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="info">
+            <div class="icon">
+              <i class="material-icons">bar_chart</i>
+            </div>
+            <h4 class="info-title">Monitoring and Analytics</h4>
+            <p>Fully functioning dashboard for monitoring the blockchain, including full private transaction support</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="info">
+            <div class="icon">
+              <i class="material-icons">code</i>
+            </div>
+            <h4 class="info-title">Developer Framework</h4>
+            <p>Enterprise friendly developer tools built on the web3j framework</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projects-2" id="projects-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto text-center">
+          <h2 class="title">Components</h2>
+          <h5 class="description">The Epirus Platform is made up of a number of core components, some of which can be used as stand-alone products in their own right.</h5>
+          <div class="section-space"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-plain" id="blockchain-explorer">
+            <a href="http://www.creative-tim.com/product/light-bootstrap-dashboard-pro" target="_blank">
+              <div class="card-header card-header-image">
+                <img src="assets/img/explorer-tx.png">
+              </div>
+            </a>
+            <div class="card-body">
+              <a href="http://www.creative-tim.com/product/light-bootstrap-dashboard-pro" target="_blank">
+                <h4 class="card-title">Blockchain Explorer</h4>
+              </a>
+              <h6 class="card-category">Blockchain Visualisation</h6>
+              <p class="card-description">
+                Our Blockchain Explorer provides a rich environment for viewing details of your smart contracts running and transactions taking place on the blockchain.
                 <br>
-                <a class="btn btn-primary btn-xl" href="#technology">Find out more</a>
+                <br>
+                Want to try it out? We provide <a href="">free and hosted versions</a>.
+              </p>
             </div>
+          </div>
         </div>
-    </header>
-
-    <section class="bg-primary" id="technology">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 text-center">
-                    <h2 class="section-heading text-white">Technology</h2>
-                    <hr class="light">
-                    <h5 class="text-faded">blk.io provides the foundation for your organisation to build on, and work with blockchain technology</h5>
-                </div>
+        <div class="col-md-4">
+          <div class="card card-plain">
+            <a href="https://github.com/web3j" target="_blank">
+              <div class="card-header card-header-image">
+                <img src="assets/img/web3j.png">
+              </div>
+            </a>
+            <div class="card-body ">
+              <a href="http://www.creative-tim.com/product/get-shit-done-pro" target="_blank">
+                <h4 class="card-title">Open Source Foundations</h4>
+              </a>
+              <h6 class="card-category">We <i class="material-icons">favorite</i> Open Source Software</h6>
+              <p class="card-description">
+                We're big believers in the power of OSS. Our open source software is used by thousands of developers globally in their blockchain deployments from startups to tier-one enterprises.
+                <br>
+                <br>
+                Check out the <a href="https://github.com/web3j" target="_blank">web3j group of projects</a> and the <a href="https://github.com/blk-io/crux" target="_blank">Crux</a> transaction enclave.
+              </p>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box">
-                        <h3>Platform</h3>
-                        <br>
-                        <a href="https://www.jpmorgan.com/country/US/EN/Quorum" target="_blank"><img src="img/quorum-github-logo.png" class="img-responsive center-block" alt="Quorum logo"></a>
-                        <hr>
-                        <h4>Built on Ethereum</h4>
-                        <p class="text-faded">Enterprise-grade platform using <strong><a href="https://www.jpmorgan.com/country/US/EN/Quorum" target="_blank">Quorum</a></strong>, an enterprise version of Ethereum developed by JP Morgan</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-plain">
+            <a href="https://github.com/web3j" target="_blank">
+              <div class="card-header card-header-image">
+                <img src="assets/img/quorum.png">
+              </div>
+            </a>
+            <div class="card-body ">
+              <a href="http://www.creative-tim.com/product/get-shit-done-pro" target="_blank">
+                <h4 class="card-title">Enterprise Ethereum</h4>
+              </a>
+              <h6 class="card-category">Quorum</h6>
+              <p class="card-description">
+                Quorum, originally developed by J.P Morgan is an enterprise-grade version of Ethereum. The blockchain is just one part of the platform, but we also support
+                other blockchain platforms compatible with the Enterprise Ethereum <a href="https://entethalliance.org/resources/" target="_blank">Client Specification</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pricing-3 section-image" style="background-image: url('./assets/img/global-information-network.jpg')" id="pricing-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 ml-auto mr-auto text-center">
+          <h2 class="title">Epirus Platform Pricing</h2>
+          <h5 class="description">It's really simple to get started and try out the Epirus platform.</h5>
+          <div class="section-space"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 ml-auto">
+          <div class="card card-pricing">
+            <div class="card-body ">
+              <h6 class="card-category">Free</h6>
+              <h1 class="card-title">
+                <small>$</small>0
+                <small>/mo</small>
+              </h1>
+              <ul>
+                <li>
+                  <b>Run locally</b></li>
+                <li>
+                  4 node <b>Quorum</b> network</li>
+                <li>
+                  No authentication services</li>
+                <li>
+                  <b>Blockchain Explorer</b> and <b>Crux</b> transaction enclave</li>
+                <li>
+                  In-memory <b>Event Store</b></li>
+              </ul>
+              <a href="https://github.com/blk-io/epirus#getting-started" target="_blank" class="btn btn-primary btn-round">
+                Get Started
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mr-auto">
+          <div class="card card-pricing card-raised bg-primary">
+            <div class="card-body">
+              <h6 class="card-category">Enterprise</h6>
+              <h1 class="card-title">
+                <small>$</small>poa
+                <small>/mo</small>
+              </h1>
+              <ul>
+                <li>
+                  <b>SaaS/cloud/on-premise</b> hosted</li>
+                <li>
+                  Unrestricted <b>Quorum</b> network</li>
+                <li>
+                  <b>Authentication</b> and <b>access-control</b></li>
+                <li>
+                  <b>Blockchain Explorer</b> and <b>Crux</b> transaction enclave</li>
+                <li>
+                  Dedicated <b>Event Store</b></li>
+              </ul>
+              <a href="#contactus" class="btn btn-white btn-round">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pricing-4" id="pricing-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 ml-auto mr-auto text-center">
+          <h2 class="title">Blockchain Explorer Pricing</h2>
+          <h5 class="description">We also offer trial and hosted Blockchain Explorers for using against existing Ethereum or Quorum networks</h5>
+          <div class="section-space"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 offset-md-1">
+          <div class="card card-pricing">
+            <div class="card-body">
+              <h6 class="card-category">Development Blockchain Explorer</h6>
+              <h1 class="card-title">
+                <small>$</small>0<small>/mo</small>
+              </h1>
+              <ul>
+                <li><i class="material-icons text-success">check</i>Local Blockchain Explorer</li>
+                <li><i class="material-icons text-danger">close</i>Professional support</li>
+                <li><i class="material-icons text-danger">close</i>Authentication Services</li>
+              </ul>
+            </div>
+            <div class="card-footer justify-content-center">
+              <a href="#pablo" class="btn btn-primary btn-round">
+                Get started
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card card-pricing card-raised bg-primary">
+            <div class="card-body">
+              <h6 class="card-category">SaaS Blockchain Explorer</h6>
+              <h1 class="card-title">
+                <small>$</small>500<small>/mo</small>
+              </h1>
+              <ul>
+                <li><i class="material-icons text-success">check</i>Cloud Hosted</li>
+                <li><i class="material-icons text-success">check</i>Professional support</li>
+                <li><i class="material-icons text-danger">close</i>Authentication Services</li>
+              </ul>
+            </div>
+            <div class="card-footer justify-content-center">
+              <a href="#pablo" class="btn btn-white btn-raised btn-round">
+                Sign up
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card card-pricing">
+            <div class="card-body">
+              <h6 class="card-category">Production Blockchain Explorer</h6>
+              <h1 class="card-title">
+                <small>$</small>poa<small>/mo</small>
+              </h1>
+              <ul>
+                <li><i class="material-icons text-success">check</i>Local Blockchain Explorer</li>
+                <li><i class="material-icons text-success">check</i>Professional support</li>
+                <li><i class="material-icons text-success">check</i>Authentication Services</li>
+              </ul>
+            </div>
+            <div class="card-footer justify-content-center">
+              <a href="#contactus" class="btn btn-primary btn-round">
+                Contact us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="team-1  bg-light" id="team-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto text-center">
+          <h2 class="title">The Team</h2>
+          <h5 class="description">We're a team of passionate technologists striving to keep blockchain technology simple</h5>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="card card-profile card-plain">
+            <div class="card-header card-avatar">
+              <a href="#conor">
+                <img class="img" src="./assets/img/faces/conor.jpg" />
+              </a>
+            </div>
+            <div class="card-body ">
+              <h4 class="card-title">Conor Svensson</h4>
+              <h6 class="card-category text-muted">Founder / CEO</h6>
+              <p class="card-description">
+                Conor is a financial technologist who’s worked has spanned tier one investment banks to founding multiple startups.
+
+                He wrote the Java Ethereum library web3j, is a Quorum contributor, and chairs the Standards Working Group in the Enterprise Ethereum Alliance.
+              </p>
+            </div>
+            <div class="card-footer justify-content-center">
+              <a href="https://twitter.com/conors10" target="_blank" class="btn btn-just-icon btn-link btn-twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/conor10/" target="_blank" class="btn btn-just-icon btn-link btn-linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/conor10" target="_blank" class="btn btn-just-icon btn-link btn-github"><i class="fa fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card card-profile card-plain">
+            <div class="card-header card-avatar">
+              <a href="#antony">
+                <img class="img" src="./assets/img/faces/antony.jpg" />
+              </a>
+            </div>
+            <div class="card-body ">
+              <h4 class="card-title">Antony Denyer</h4>
+              <h6 class="card-category text-muted">CTO</h6>
+              <p class="card-description">
+                Antony's Economics and Computer Science teachers both told him there was no crossover between the two subjects. 20 years later we're programming money
+              </p>
+            </div>
+            <div class="card-footer justify-content-center">
+              <a href="http://www.linkedin.com/pub/antony-denyer/1/8a2/233" target="_blank" class="btn btn-just-icon btn-link btn-linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/antonydenyer/" target="_blank" class="btn btn-just-icon btn-link btn-github"><i class="fa fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card card-profile card-plain">
+            <div class="card-header card-avatar">
+              <a href="#puneetha">
+                <img class="img" src="./assets/img/faces/puneetha.jpg" />
+              </a>
+            </div>
+            <div class="card-body ">
+              <h4 class="card-title">Puneetha Karamsetty</h4>
+              <h6 class="card-category text-muted">Software Engineer</h6>
+              <p class="card-description">
+                Puneetha joined us from Samsung’s R&D department, where she was an LLVM compiler Software Engineer.
+              </p>
+            </div>
+            <div class="card-footer justify-content-center">
+              <a href="https://www.linkedin.com/in/puneetha-k/" target="_blank" class="btn btn-just-icon btn-link btn-linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/Puneetha17" target="_blank" class="btn btn-just-icon btn-link btn-github"><i class="fa fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card card-profile card-plain">
+            <div class="card-header card-avatar">
+              <a href="#ivaylo">
+                <img class="img" src="./assets/img/faces/ivaylo.jpg" />
+              </a>
+            </div>
+            <div class="card-body ">
+              <h4 class="card-title">Ivaylo Kirilov</h4>
+              <h6 class="card-category text-muted">Software Engineer</h6>
+              <p class="card-description">
+                Ivaylo joined after completing his MSci in Computer Science. He drinks coffee, writes Java and runs Linux. You will see him running workshops for web3j, the Java library for working with Ethereum.
+              </p>
+            </div>
+            <div class="card-footer justify-content-center">
+              <a href="https://www.linkedin.com/in/iikirilov/" target="_blank" class="btn btn-just-icon btn-link btn-linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/iikirilov" target="_blank" class="btn btn-just-icon btn-link btn-github"><i class="fa fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card card-profile card-plain">
+            <div class="card-header card-avatar">
+              <a href="#xavier">
+                <img class="img" src="./assets/img/faces/xavier.jpg" />
+              </a>
+            </div>
+            <div class="card-body ">
+              <h4 class="card-title">Xavier Seguí</h4>
+              <h6 class="card-category text-muted">Expert Architect and Software Engineer</h6>
+              <p class="card-description">
+                Xavier is our resident hexagalot - fluent in English, Spanish, Catalan, French, Portuguese, Italian, and of course a number of different programming languages. He also has an MSc in Complexity Science from ISCTE in Lisbon.
+              </p>
+            </div>
+            <div class="card-footer justify-content-center">
+              <a href="https://www.linkedin.com/in/xavier-arias-segui/" target="_blank" class="btn btn-just-icon btn-link btn-linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/xaviarias" target="_blank" class="btn btn-just-icon btn-link btn-github"><i class="fa fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card card-profile card-plain">
+            <div class="card-header card-avatar">
+              <a href="#seba">
+                <img class="img" src="./assets/img/faces/seba.jpg" />
+              </a>
+            </div>
+            <div class="card-body ">
+              <h4 class="card-title">Sebastian-Stefan Raba</h4>
+              <h6 class="card-category text-muted">Software Engineer</h6>
+              <p class="card-description">
+                Seba’s been coding since his teenage years, where he was an algorithmic competitor at national level back in Romania.
+              </p>
+            </div>
+            <div class="card-footer justify-content-center">
+              <a href="https://www.linkedin.com/in/sebastian-stefan-raba/" target="_blank" class="btn btn-just-icon btn-link btn-linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/sebaraba" target="_blank" class="btn btn-just-icon btn-link btn-github"><i class="fa fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card card-profile card-plain">
+            <div class="card-header card-avatar">
+              <a href="#john">
+                <img class="img" src="./assets/img/faces/john.jpg" />
+              </a>
+            </div>
+            <div class="card-body ">
+              <h4 class="card-title">John Chang</h4>
+                <h6 class="card-category text-muted">Software Engineer</h6>
+                <p class="card-description">
+                  John’s a health research geek who was bitten by the blockchain bug back in 2016 at University where he was researching royalty payments for copyright holders on Ethereum.
+                </p>
+            </div>
+            <div class="card-footer justify-content-center">
+              <a href="https://www.linkedin.com/in/john-chang-55a784113/" target="_blank" class="btn btn-just-icon btn-link btn-linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/JohnChangUK" target="_blank" class="btn btn-just-icon btn-link btn-github"><i class="fa fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card card-profile card-plain">
+            <div class="card-header card-avatar">
+              <a href="#you">
+                <img class="img" src="./assets/img/faces/question-mark.jpg" />
+              </a>
+            </div>
+            <div class="card-body ">
+              <h4 class="card-title">You</h4>
+              <h6 class="card-category text-muted">Software Engineer</h6>
+              <p class="card-description">
+                We're always on the lookout for exceptional people. Check our current listings <a href="https://angel.co/blk-io/jobs" target="_blank">here</a>.
+              </p>
+            </div>
+            <div class="card-footer justify-content-center">
+              <a href="https://github.com/blk-io" target="_blank" class="btn btn-just-icon btn-link btn-github"><i class="fa fa-github"></i></a>
+              <a href="https://twitter.com/blk_io" target="_blank" class="btn btn-just-icon btn-link btn-twitter"><i class="fa fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="cd-section" id="contactus">
+    <div class="contactus-1 section-image" style="background-image: url('./assets/img/london.jpg')">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h2 class="title">Get in Touch</h2>
+            <h5 class="description">We're located in the heart of London's thriving tech scene, near the Silicon Roundabout</h5>
+            <div class="info info-horizontal">
+              <div class="icon icon-primary">
+                <i class="material-icons">pin_drop</i>
+              </div>
+              <div class="description">
+                <h4 class="info-title">Our office</h4>
+                <p> 23 Featherstone Street
+                  <br> London, EC1Y 8SL
+                  <br> United Kingdom
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 ml-auto">
+            <div class="card card-contact">
+              <form id="contact-form" method="post" action="https://formspree.io/hi@blk.io">
+                <div class="card-header card-header-raised card-header-primary text-center">
+                  <h4 class="card-title">Contact Us</h4>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group label-floating is-empty">
+                        <label class="bmd-label-floating">First name</label>
+                        <input type="text" name="name" class="form-control">
+                        <span class="material-input"></span>
+                      </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box">
-                        <h3>Integration</h3>
-                        <br>
-                        <a href="https://github.com/web3j/" target="_blank"><img src="img/web3j-black-logo.png" class="img-responsive center-block" alt="web3j logo"></a>
-                        <hr>
-                        <h4>web3j Foundation</h4>
-                        <p class="text-faded">Creator of <strong><a href="https://github.com/web3j/" target="_blank">web3j</a></strong>, trusted by enterprises globally to integrate their applications with the blockchain</p>
+                    <div class="col-md-6">
+                      <div class="form-group label-floating is-empty">
+                        <label class="bmd-label-floating">Last name</label>
+                        <input type="text" name="name" class="form-control">
+                        <span class="material-input"></span>
+                      </div>
                     </div>
+                  </div>
+                  <div class="form-group label-floating is-empty">
+                    <label class="bmd-label-floating">Email address</label>
+                    <input type="email" name="email" class="form-control">
+                    <span class="material-input"></span>
+                  </div>
+                  <div class="form-group label-floating is-empty">
+                    <label for="exampleMessage1" class="bmd-label-floating">Your Message</label>
+                    <textarea name="message" class="form-control" id="exampleMessage1" rows="6"></textarea>
+                    <span class="material-input"></span>
+                  </div>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box">
-                        <h3>Tools</h3>
-                        <br>
-                        <img src="img/chart-icon.png" class="img-responsive center-block" alt="line chart icon"></a>
-                        <hr>
-                        <h4>Enterprise Tooling</h4>
-                        <p class="text-faded">The tools your company needs to work with this technology - blockchain explorers, contract registries and smart contracts for financial protocols</p>
-                    </div>
+                <div class="card-footer justify-content-between">
+                  <button type="submit" class="btn btn-primary pull-right">Send Message</button>
                 </div>
+              </form>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
 
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <hr class="primary">
-                </div>
-            </div>
+  <footer class="footer footer-white footer-big">
+    <div class="container">
+
+      <div class="content">
+        <div class="row">
+
+          <div class="col-md-1">
+              <img src="assets/img/blk-io-black-nobackground.png" class="img-fluid">
+          </div>
+          <div class="col-md-2 offset-md-1">
+            <h5>Platform</h5>
+            <ul class="links-vertical">
+              <li>
+                <a href="#features">
+                  Epirus
+                </a>
+              </li>
+              <li>
+                <a href="#blockchain-explorer">
+                  Blockchain Explorer
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5>Open Source</h5>
+            <ul class="links-vertical">
+              <li>
+                <a href="https://github.com/blk-io/crux" target="_blank">
+                  Crux
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/web3j" target="_blank">
+                  web3j
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5>Company</h5>
+            <ul class="links-vertical">
+              <li>
+                <a href="#team-1">
+                  Team
+                </a>
+              </li>
+              <li>
+                <a href="#contactus">
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a href="https://angel.co/blk-io/jobs" target="_blank">
+                  Jobs
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h5>Resources</h5>
+            <ul class="links-vertical">
+              <li>
+                <a href="https://medium.com/blk-io" target="_blank">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/blk_io" target="_blank">
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/blk-io" target="_blank">
+                  GitHub
+                </a>
+              </li>
+
+            </ul>
+          </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-handshake-o text-primary sr-icons"></i>
-                        <h3>Consulting and delivery</h3>
-                        <p class="text-muted">Proof of concept delivery, platform deployment, and smart contract development</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-ticket text-primary sr-icons"></i>
-                        <h3>Commercial support</h3>
-                        <p class="text-muted">Platform management and development support across your Ethereum and Quorum blockchain deployments</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-users text-primary sr-icons"></i>
-                        <h3>Training</h3>
-                        <p class="text-muted">Training in web3j and smart contract development on Ethereum and Quorum</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      </div>
 
+      <hr>
 
-    <section id="partners" class="bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 text-center">
-                    <h2>Partners</h2>
-                    <hr class="light">
-                    &nbsp;
-                <div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 offset-lg-2 col-md-6 text-center">
-                    <a href="https://www.gov.uk/government/organisations/innovate-uk/about" target="_blank"><img src="img/innovate-uk-logo.png" class="img-fluid center-block" alt="Innovate UK"></a>
-                </div>
-                &nbsp;
-                <div class="col-lg-4 col-md-6 text-center">
-                    <a href="http://www.equipmentconnect.co.uk/" target="_blank"><img src="img/equipment-connect-logo.png" class="img-fluid center-block" alt="Innovate UK"></a>
-                </div>
-                &nbsp;
-            </div>
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 text-center">
-                    &nbsp;
-                    <h4 class="text-muted"><em>More coming soon...</em></h4>
-                    &nbsp;
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 text-center">
-                    <!--<p>A number of high profile partnerships will be announced shortly!</p>-->
-                    <!--<p></p>-->
-                    <!--&nbsp;-->
-                    <hr class="light">
-                    <img src="img/eea-logo.png" class="img-responsive center-block" alt="Enterprise Ethereum Alliance logo">
-                    <p></p>
-                    <p>blk.io is a member of the <a href="https://entethalliance.org/members/" target="_blank">Enterprise Ethereum Alliance</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
+      <ul class="social-buttons">
+        <li>
+          <a href="https://twitter.com/blk_io" target="_blank" class="btn btn-just-icon btn-link btn-twitter">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/blk-io" target="_blank" class="btn btn-just-icon btn-link btn-github">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/blk-io" target="_blank" class="btn btn-just-icon btn-link btn-linkedin">
+            <i class="fa fa-linkedin-square"></i>
+          </a>
+        </li>
+        <li>
+          <a  href="https://medium.com/blk-io" target="_blank" class="btn btn-just-icon btn-link btn-medium">
+            <i class="fa fa-medium"></i>
+          </a>
+        </li>
+        <li>
+          <a  href="https://angel.co/blk-io" target="_blank" class="btn btn-just-icon btn-link btn-angellist">
+            <i class="fa fa-angellist"></i>
+          </a>
+        </li>
+        <li>
+          <a  href="mailto:hi@blk.io" target="_blank" class="btn btn-just-icon btn-link btn-mail">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
 
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 text-center">
-                    <h2 class="section-heading">Contact</h2>
-                    <hr class="primary">
-                    <p>Interested in finding out more?</p>
-                </div>
-                <div class="col-lg-1 offset-lg-3 text-center">
-                    <i class="fa fa-twitter fa-3x sr-contact"></i>
-                    <p><a href="https://twitter.com/blk_io" target="_blank">@blk_io</a></p>
-                </div>
-                <div class="col-lg-1 text-center">
-                    <i class="fa fa-github fa-3x sr-contact"></i>
-                    <p><a href="https://github.com/blk-io" target="_blank">blk-io</a></p>
-                </div>
-                <div class="col-lg-1 text-center">
-                    <i class="fa fa-linkedin-square fa-3x sr-contact"></i>
-                    <p><a href="https://www.linkedin.com/company/blk-io" target="_blank">LinkedIn</a></p>
-                </div>
-                <div class="col-lg-1 text-center">
-                    <i class="fa fa-medium fa-3x sr-contact"></i>
-                    <p><a href="https://medium.com/blk-io" target="_blank">Medium</a></p>
-                </div>
-                <div class="col-lg-1 text-center">
-                    <i class="fa fa-angellist fa-3x sr-contact"></i>
-                    <p><a href="https://angel.co/blk-io" target="_blank">AngelList</a></p>
-                </div>
-                <div class="col-lg-1 text-center">
-                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:hi@blk.io">hi@blk.io</a></p>
-                </div>
-                <div class="col-lg-6 offset-lg-3 text-center">
-                    <form class="form-horizontal" method="POST" action="https://formspree.io/hi@blk.io">
-                        <div class="row">
-                            <div class="form-group col-lg-6">
-                                <input type="name" name="name" placeholder="Name" class="form-control" >
-                            </div>
-                            <div class="form-group col-lg-6">
-                                <input type="email" name="_replyto" placeholder="Email" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea rows="4" name="message" placeholder="Your message" class="form-control"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-xl" >Send</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="copyright pull-center">
+        Copyright &#xA9; <script>document.write(new Date().getFullYear())</script> BLK Technologies Limited All Rights Reserved
+      </div>
+    </div>
+  </footer>
 
-    <footer>
-        <div id="copyright" class="container-fluid text-center bg-dark">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <br>
-                    <p>2017 BLK Technologies Ltd &copy; All rights reserved
-                        (<a href="https://twitter.com/blk_io" target="_blank">@blk_io</a>)</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/tether/tether.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="vendor/particles/particles.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
-
+  <!--   Core JS Files   -->
+  <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+  <script src="assets/js/plugins/moment.min.js"></script>
+  <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+  <script src="assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--  Google Maps Plugin  -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB40IlOjJrf7cD2EwBroXK9oWKujyKBcMY"></script>
+  <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+  <script src="assets/js/plugins/bootstrap-tagsinput.js"></script>
+  <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+  <script src="assets/js/plugins/bootstrap-selectpicker.js" type="text/javascript"></script>
+  <!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+  <script src="assets/js/plugins/jasny-bootstrap.min.js" type="text/javascript"></script>
+  <!--	Plugin for Small Gallery in Product Page -->
+  <script src="assets/js/plugins/jquery.flexisel.js" type="text/javascript"></script>
+  <!-- Plugins for presentation and navigation  -->
+  <script src="assets/demo/modernizr.js" type="text/javascript"></script>
+  <script src="assets/demo/vertical-nav.js" type="text/javascript"></script>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Js With initialisations For Demo Purpose, Don't Include it in Your Project -->
+  <script src="assets/demo/demo.js" type="text/javascript"></script>
+  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+  <script src="assets/js/material-kit.js?v=2.1.0" type="text/javascript"></script>
+  <script>
+      $().ready(function() {
+          materialKitDemo.initContactUs2Map();
+      });
+  </script>
 </body>
-
-</html>
